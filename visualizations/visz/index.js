@@ -11,6 +11,7 @@ const index = () => {
 <Grid>
    
 <GridItem columnSpan={6}>
+    <h1>AreaChart</h1>
     <AreaChart
             accountId={4438263}
             query="SELECT average(transmitBytesPerSecond) AS `Transmit bytes per second`, average(receiveBytesPerSecond) AS `Receive bytes per second` FROM NetworkSample WHERE (entityGuid = 'NDQzODI2M3xJTkZSQXxOQXw3OTc2Mzk0NTQwNTkwNTU2Njc2') TIMESERIES AUTO"
@@ -19,6 +20,7 @@ const index = () => {
 </GridItem>
  
 <GridItem columnSpan={6}>
+  <h1>LineChart</h1>
     <LineChart
             accountId={4438263}
             query="SELECT average(transmitBytesPerSecond) AS `Transmit bytes per second`, average(receiveBytesPerSecond) AS `Receive bytes per second` FROM NetworkSample WHERE (entityGuid = 'NDQzODI2M3xJTkZSQXxOQXw3OTc2Mzk0NTQwNTkwNTU2Njc2') TIMESERIES AUTO"
@@ -26,6 +28,7 @@ const index = () => {
           />
 </GridItem>
 <GridItem columnSpan={6}>
+  <h1>PieChart</h1>
 <PieChart
             accountId={4438263}
             query="SELECT average(transmitBytesPerSecond) AS `Transmit bytes per second`, average(receiveBytesPerSecond) AS `Receive bytes per second` FROM NetworkSample WHERE (entityGuid = 'NDQzODI2M3xJTkZSQXxOQXw3OTc2Mzk0NTQwNTkwNTU2Njc2') TIMESERIES AUTO"
@@ -34,7 +37,9 @@ const index = () => {
 </GridItem>
 <GridItem columnSpan={6}>
 
-</GridItem></Grid>
+</GridItem>
+
+</Grid>
  
  
  
