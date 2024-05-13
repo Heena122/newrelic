@@ -1,6 +1,6 @@
 import React from "react";
  
-import { AreaChart, LineChart, PieChart } from "nr1";
+import { AreaChart, LineChart, PieChart,BarChart } from "nr1";
  
 import { Grid, GridItem } from "nr1";
  
@@ -27,6 +27,15 @@ const index = () => {
             fullWidth
           />
 </GridItem>
+<GridItem columnSpan={6}>
+    <h1>BarChart</h1>
+    <BarChart
+            accountId={4438263}
+            query="SELECT average(transmitBytesPerSecond) AS `Transmit bytes per second`, average(receiveBytesPerSecond) AS `Receive bytes per second` FROM NetworkSample WHERE (entityGuid = 'NDQzODI2M3xJTkZSQXxOQXw3OTc2Mzk0NTQwNTkwNTU2Njc2') TIMESERIES AUTO"
+            fullWidth
+          />
+</GridItem>
+ 
 <GridItem columnSpan={6}>
   <h1>PieChart</h1>
 <PieChart
